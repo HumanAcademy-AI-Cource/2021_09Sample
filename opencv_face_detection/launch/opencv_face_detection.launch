@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find opencv_apps)/launch/face_detection.launch">
+    <arg name="image" value="/image_raw" />
+  </include>
+  <node name="uvc_camera" pkg="uvc_camera" type="uvc_camera_node" />
+</launch>
